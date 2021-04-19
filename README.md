@@ -1,3 +1,2 @@
-# Professional README Generator Starter Code
+# undefined
 
-[How to create a Professional README](./readme-guide.md)

@@ -4,6 +4,11 @@ const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./Develop/utils/generateMarkdown");
 
+//debugging, trying promisify
+//reference here https://nodejs.org/dist/latest-v8.x/docs/api/util.html
+const util = require("util");
+const fileWriteAsync = util.promisify(fs.writeFile);
+
 // TODO: Create an array of questions for user input
 const questions = [
 
@@ -65,15 +70,15 @@ const questions = [
 ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFile(path.join(process.cwd(), fileName), data);
+const writeToFile = (filename, data) => {
+    return fileWriteAsync(filename, data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((questionAnswers) => {
-        console.log("Making your readme...hold on a second...");
+        console.log("Creating your README file...this will take a moment, your patience will be rewarded");
         writeToFile("README.md", generateMarkdown({...questionAnswers}));
     })
 }
