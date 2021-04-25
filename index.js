@@ -14,6 +14,19 @@ const questions = [
 
     {
         type: "input",
+        name: "title",
+        message: "Please enter your project's title. This is a required value.",
+         if (nameInput) {
+             return true;
+         } else {
+             console.log('You need to enter a project title!');
+             return false;
+         }
+    },
+
+
+    {
+        type: "input",
         name: "email",
         message: "Please enter your email address?"
     },
@@ -24,12 +37,7 @@ const questions = [
         message: "Please enter your Github username?"
     },
 
-    {
-        type: "input",
-        name: "Project_Title",
-        message: "Please enter your project's name"
-    },
-
+   
     {
         type: "list",
         message: "What license is the project currently under?",
