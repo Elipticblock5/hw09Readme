@@ -170,7 +170,7 @@ const userQuest = [
     
     {
         type: 'input',
-        name: 'test',
+        name: 'tests',
         message: 'What is the command needed to run tests?',
         
         }, 
@@ -189,7 +189,7 @@ const userQuest = [
     type: 'input',
     name: 'usage',
     message: 'What does a user need to know to use this repository',
-    default: 'Usage'
+    default: 'usage'
     
     },
 

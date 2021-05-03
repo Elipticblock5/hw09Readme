@@ -31,23 +31,25 @@ function generateMarkdown(data) {
   
   ## Contributing
   ${data.contributing}
+
   ## License
   ${data.license} 
+  
   ## Usage
   ${data.usage}
   
-  ## Installation
+  ## Installation instructions
   To install project dependencies run:
   
   ${data.installation}
   
-  ## Tests
+  ## Tests, to run tests on repo
   To run tests run:
   
   ${data.tests}
   
  
-  ## Questions?
+  ## Questions for me?
   Have any questions? Shoot me an [email](${data.email})
     `;
   }
