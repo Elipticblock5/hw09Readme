@@ -9,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "axios": "^0.21.1",
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elipticblock5/hw09Readme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elipticblock5/hw09Readme/issues"
+  },
+  "homepage": "https://github.com/Elipticblock5/hw09Readme#readme"
 }
