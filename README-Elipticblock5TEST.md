@@ -1,11 +1,3 @@
-# Walk through video
-[Walk Through Video](https://drive.google.com/file/d/1JfbxFsjQSWMgZx83KFMeK7UVc9FGmop_/view?usp=sharing)
-
-# GitHub Repository
-https://github.com/Elipticblock5/hw09Readme
-
-
-
 # homework week 9 
   ## Description
   readme generator 
@@ -18,13 +10,13 @@ https://github.com/Elipticblock5/hw09Readme
   * [Questions?](#questions)
   
   ## Contributing
-  pull request or fork
+  pull or fork
 
   ## License
-  mit 
+  MIT 
   
   ## Usage
-  install inquirer and axios
+  requires inquirer and axios dependencies
   
   ## Installation instructions
   To install project dependencies run:
@@ -39,3 +31,4 @@ https://github.com/Elipticblock5/hw09Readme
  
   ## Questions for me?
   Have any questions? Shoot me an [email](nbjohnson@gmail.com)
+    
