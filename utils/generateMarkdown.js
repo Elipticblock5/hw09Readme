@@ -29,12 +29,12 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Questions?](#questions)
   
-  ## Contributing
+  ## Contributing  Information
   ${data.contributing}
 
-  ## License
+  ## License Information
   ${data.license} 
-  
+
   ## Usage
   ${data.usage}
   
