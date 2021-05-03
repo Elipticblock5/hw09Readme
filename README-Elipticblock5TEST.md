@@ -1,7 +1,6 @@
-# title 
+# homework 9 
   ## Description
-
-  readme generator 
+  readme dynamic generator 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -11,29 +10,23 @@
   * [Questions?](#questions)
   
   ## Contributing
-  contact me
-
+  pull or fork
   ## License
   undefined 
-
   ## Usage
-  follow prompts
+  pull or fork
   
   ## Installation
   To install project dependencies run:
   ```
   npm i
   ```
-
-
   ## Tests
   To run tests run:
   ```
   undefined
   ```
-
  
-
   ## Questions?
-  Have any questions? Want to collaborate on a project? Shoot me an [email](nbjohnson@gmail.com)
+  Have any questions? Shoot me an [email](nbjohnson@gmail.com)
     

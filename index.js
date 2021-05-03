@@ -1,11 +1,8 @@
 /*
 //node modules needed ....
-
 const fs = require('fs');
 const inquirer = require('inquirer');
-
 //prompts to inquirer for questions
-
 inquirer.prompt(
     [
         {
@@ -15,29 +12,23 @@ inquirer.prompt(
             //validate function
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
         },
-
         {
             type: 'input',
             message: 'How does installtion work for your app',
             name: 'installation',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
         },
-
         {
             type: 'input',
             message: 'Instructions to be followed?',
             name: 'instructions',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
         },
-
         {
             type: 'input',
             message: 'any credits to give',
             name: 'credits',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
          },
         
          {
@@ -45,34 +36,26 @@ inquirer.prompt(
             message: 'How to use the application?',
             name: 'usage',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
         },
-
         {
             //change to list type for license types. 
-
-
             type: 'list',
             message: 'How is the app licensed',
             name: 'license',
             choices:['The MIT License', 'The Gnu Public License', 'Apache License', 'The GPL License', 'N/A'],
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
         },
-
         {
             type: 'input',
             message: 'GitHub Username?',
             name: 'github',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
         },
-
         {
             type:'input',
             message: 'What is your email address?',
             name: 'email',
             validate: (value)=>{ if(value){return true} else {return 'value needed to proceed'}},
-
         }
     ]
 ).then(({
@@ -104,17 +87,13 @@ ${instructions}
 ${credits}
 ## License
 ${license}
-
 #Contact
 * GitHub :${github}
 * Email :${email};
-
 // new functeion to create readme
-
 createNewFile(title,template);
 }
 );
-
 //not working
 function createNewFile(filename,template){
     fs.writeFile(''./$(fileName.toLowerCase().split(' ').join('')}.md',data)
@@ -224,7 +203,7 @@ const userQuest = [
 
 { 
     type: 'input',
-    name: 'License',
+    name: 'license',
     message: 'Under what license is the application under?',
     default: 'MIT'
 }, 
@@ -292,4 +271,3 @@ function init() {
 
 // Function call to initialize app
 init(); 
-

@@ -20,7 +20,6 @@ function generateMarkdown(data) {
 
   return `# ${data.title} 
   ## Description
-
   ${data.description} 
   ## Table of Contents
   * [Installation](#installation)
@@ -32,35 +31,28 @@ function generateMarkdown(data) {
   
   ## Contributing
   ${data.contributing}
-
   ## License
   ${data.license} 
-
   ## Usage
   ${data.usage}
   
   ## Installation
   To install project dependencies run:
-  \`\`\`
+  
   ${data.installation}
-  \`\`\`
-
-
+  
   ## Tests
   To run tests run:
-  \`\`\`
+  
   ${data.tests}
-  \`\`\`
-
+  
  
-
   ## Questions?
-  Have any questions? Want to collaborate on a project? Shoot me an [email](${data.email})
+  Have any questions? Shoot me an [email](${data.email})
     `;
   }
   
 
 
 module.exports = generateMarkdown;
-
 
