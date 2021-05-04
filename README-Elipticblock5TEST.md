@@ -1,6 +1,10 @@
 # homework week 9 
+
+
   ## Description
   readme generator 
+
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -9,13 +13,13 @@
   * [Contributing](#contributing)
   * [Questions?](#questions)
   
-  ## Contributing
+  ## Contributing Information
   pull or fork
 
-  ## License
+  ## License Information
   MIT 
   
-  ## Usage
+  ## Usage Instructions
   requires inquirer and axios dependencies
   
   ## Installation instructions
@@ -29,6 +33,6 @@
   npm run tests
   
  
-  ## Questions for me?
+  ## Questions for me?  Shoot me an email. 
   Have any questions? Shoot me an [email](nbjohnson@gmail.com)
     
