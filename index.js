@@ -179,8 +179,8 @@ const userQuest = [
    {
     type: 'input', 
     name: 'installation',
-    message: 'What are the commonda needed to install dependencies',
-    default: 'installation'
+    message: 'What are the commands needed to install dependencies',
+    default: 'dependencies'
     },
     
    
@@ -230,6 +230,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+    //runs question section off of inquirer
+
     inquirer.prompt(userQuest)
     .then(response => {
 
@@ -237,8 +239,12 @@ function init() {
 
         //using axios https://www.npmjs.com/package/axios#example
         axios.get(urlQuery)
+
+        //https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#shorthand
         .then(res => {
             const data = {
+
+                //grabs responses from above into data constant
                 username: response.username,
                 title: response.title,
                 description: response.description,
@@ -253,6 +259,8 @@ function init() {
                 email: "nbjohnson@gmail.com",
                 
             }
+
+            //constant set and write function
             const readmeFileContent = generateMarkdown(data);
             writeToFile('README-Elipticblock5TEST.md', readmeFileContent);
         })

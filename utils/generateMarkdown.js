@@ -16,10 +16,13 @@
 //function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+
+//grabs data from questions and fills out tempalate with data tags
 function generateMarkdown(data) {
 
   return `# ${data.title} 
   ## Description
+  
   ${data.description} 
   ## Table of Contents
   * [Installation](#installation)
